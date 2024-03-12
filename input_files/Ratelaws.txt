@@ -2437,3 +2437,45 @@ vPd86	Cytoplasm	9.622233E-06
 vPd87	Nucleus	4.145121E-06
 vPd88	Cytoplasm	2.218213E-06
 vPd89	Cytoplasm	5.754195E-06
+vLap1	Extracellular	((kLap1_1*(kLap1_2/kLap1_3))*lapat_EC)	1.00E-02	5.25E-12	8.00E-08			
+vLap2	Cytoplasm	1.00E-02						
+vLap3	Cytoplasm	1.00E-03						
+vLap4	Cytoplasm	2.40E-03						
+vLap5	Cytoplasm	1.51E-05						
+vLap6	Cytoplasm	1.00E-03						
+vLap7	Cytoplasm	7.00E-03						
+vLap8	Cytoplasm	1.04E-05						
+vLap9	Cytoplasm	1.00E-02						
+vLap10	Cytoplasm	5.40E-01						
+vLap11	Cytoplasm	0						
+vAlp1	Extracellular	((kAlp1_1*(kAlp1_2/kAlp1_3))*alpel_EC)	1.00E-02	5.25E-12	8.00E-08			
+vAlp2	Cytoplasm	1.00E-02						
+vAlp3	Cytoplasm	1.00E-03						
+vAlp4	Cytoplasm	2.40E-03						
+vAlp5	Cytoplasm	4.81E-06						
+vAlp6	Cytoplasm	1.00E-03						
+vAlp7	Cytoplasm	2.40E-03						
+vAlp8	Cytoplasm	4.81E-06						
+vNer1	Extracellular	((kNer1_1*(kNer1_2/kNer1_3))*nerat_EC)	1.00E-02	5.25E-12	8.00E-08			
+vNer2	Cytoplasm	1.00E-02						
+vNer3	Cytoplasm	1.00E-04						
+vNer4	Cytoplasm	0.00E+00						
+vNer5	Cytoplasm	1.51E-05						
+vNer6	Cytoplasm	1.00E-04						
+vNer7	Cytoplasm	0.00E+00						
+vNer8	Cytoplasm	1.04E-05						
+vNer9	Cytoplasm	1.00E-04						
+vNer10	Cytoplasm	0.00E+00						
+vNer11	Cytoplasm	0.00E+00						
+vPal1	Extracellular	((kPal1_1*(kPal1_2/kPal1_3))*palbo_EC)	1.00E-02	5.25E-12	8.00E-08			
+vPal2	Cytoplasm	1.00E-02						
+vPal3	Cytoplasm	((kPal3_1*(kPal3_2/kPal3_3))*palbo_IC)	1.00E-02	1.75E-12	5.25E-12			
+vPal4	Nucleus	1.00E-02						
+vPal5	Nucleus	1.00E-03						
+vPal6	Nucleus	1.90E-03						
+vPal7	Nucleus	2.36E-03						
+vTra1	Extracellular	((kTra1_1*(kTra1_2/kTra1_3))*trame_EC)	1.00E-02	5.25E-12	8.00E-08			
+vTra2	Cytoplasm	1.00E-02						
+vTra3	Cytoplasm	1.00E-01						
+vTra4	Cytoplasm	3.50E-02						
+vTra5	Cytoplasm	2.22E-06
