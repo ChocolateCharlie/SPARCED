@@ -2449,5 +2449,5 @@ vTE9	Cytoplasm	((kTE9_1*(kTE9_2/kTE9_3))*trast_E2_endo)	2.4E-05	5.0E-05	5.25E-12
 vTE10	Cytoplasm	1.27E-04
 vTE11	Cytoplasm	1.27E-04
 vTE12	Cytoplasm	5.95E-05
-vTE13	Cytoplasm	((kTE13_1*(kTE13_2/kTE13_3))*DM1_EC)	5.95E-05	5.25E-12	5.0E-05
+vTE13	Extracellular	((kTE13_1*(kTE13_2/kTE13_3))*DM1_EC)	5.95E-05	5.25E-12	5.0E-05
 vTE14	Cytoplasm	((kTE14_1*(kTE14_2/kTE14_3))*DM1_IC)	3.95E-05	5.0E-05	5.25E-12
