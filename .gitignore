@@ -2,8 +2,11 @@
 *.py[cod]
 __pycache__/
 
-# Simulation results
-SPARCED/results
+# Simulation results except the README in default folder
+SPARCED/results/*
+!SPARCED/results/New-Simulation
+SPARCED/results/New-Simulation/*
+!SPARCED/results/New-Simulation/README.md
 
 old*
 *.ipynb_check*
