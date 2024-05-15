@@ -772,6 +772,18 @@ AKTi	Cytoplasm	0.00E+00
 AKTi_AKT	Cytoplasm	0.00E+00		AKT1 AKT2
 mT	Cytoplasm	3.77E+01		
 EIF4E_mT	Cytoplasm	8.88E+01	ENSG00000151247	EIF4E
+trast_DM1_EC	Extracellular	0.00E+00
+trast_EC	Extracellular	0.00E+00
+DM1_EC	Extracellular	0.00E+00
+trast_DM1_E2_EC	Extracellular	0.00E+00
+trast_E2_EC	Extracellular	0.00E+00
+E2_endo	Cytoplasm	0.00E+00
+trast_DM1_E2_endo	Cytoplasm	0.00E+00
+trast_E2_endo	Cytoplasm	0.00E+00
+DM1_endo	Cytoplasm	0.00E+00
+DM1_cyto	Cytoplasm	0.00E+00
+target	Cytoplasm	0.00E+00
+DM1_target	Cytoplasm	0.00E+00
 m_TP53	Cytoplasm	2.53E-03	ENSG00000141510	TP53
 m_MDM2	Cytoplasm	1.58E-02	ENSG00000135679	MDM2
 m_PPM1D	Cytoplasm	6.32E-04	ENSG00000170836	PPM1D
