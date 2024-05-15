@@ -1,3 +1,0 @@
-EGF	E	1.0
-Insulin	INS	17.21
-tDM1	trast_DM1_EC	30.0
