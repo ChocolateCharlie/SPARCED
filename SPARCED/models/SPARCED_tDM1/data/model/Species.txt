@@ -782,7 +782,7 @@ E2_endo	Cytoplasm	0.00E+00
 trast_DM1_E2_endo	Cytoplasm	0.00E+00
 trast_E2_endo	Cytoplasm	0.00E+00
 DM1_endo	Cytoplasm	0.00E+00
-DM1_cyto	Cytoplasm	0.00E+00
+DM1_IC	Cytoplasm	0.00E+00
 target	Cytoplasm	0.00E+00
 DM1_target	Cytoplasm	0.00E+00
 m_TP53	Cytoplasm	2.53E-03	ENSG00000141510	TP53
