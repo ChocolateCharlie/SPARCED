@@ -11,5 +11,5 @@ simulation:
     omics: "OmicsData.txt"
     perturbations:
         root: "perturbations"
-        default: "tDM1_30_nM.txt"
+        default: "tDM1_0_0015_nM.txt"
 
