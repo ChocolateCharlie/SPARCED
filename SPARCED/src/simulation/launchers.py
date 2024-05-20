@@ -41,7 +41,7 @@ def launch_experiment_simulation() -> None:
         perturbations = load_perturbations(simulation_files["root"], simulation_files["perturbations"], args.perturbations)
     if "incubation" in simulation_files:
         incubation_conditions = load_perturbations(simulation_files["root"], simulation_files["incubation"], args.perturbations)
-        incubation_duration = int(simulation_files["incubation"]["duration"])
+        incubation_duration = float(simulation_files["incubation"]["duration"])
     # Population size
     popsize = sanitize_popsize(args.population_size)
     # Runtime booleans
