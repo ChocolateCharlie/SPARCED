@@ -11,5 +11,9 @@ simulation:
     omics: "OmicsData.txt"
     perturbations:
         root: "perturbations"
+        default: "wash_tDM1.txt"
+    incubation:
+        root: "perturbations"
         default: "tDM1_30_nM.txt"
+        duration: 2.0
 
