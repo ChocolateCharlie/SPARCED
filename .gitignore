@@ -2,9 +2,10 @@
 *.py[cod]
 __pycache__/
 
-# Simulation results except the README in default folder
+# Simulation results except the README in default folder and some control
 SPARCED/results/*
 !SPARCED/results/New-Simulation
+!SPARCED/results/Control
 SPARCED/results/New-Simulation/*
 !SPARCED/results/New-Simulation/README.md
 
