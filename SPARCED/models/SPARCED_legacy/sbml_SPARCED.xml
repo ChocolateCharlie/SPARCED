@@ -10998,8 +10998,8 @@
           <speciesReference species="p53ac" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="ATMP"/>
           <modifierSpeciesReference species="ATRac"/>
+          <modifierSpeciesReference species="ATMP"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
