@@ -11,7 +11,7 @@ if(POLICY CMP0074)
   cmake_policy(SET CMP0074 NEW)
 endif(POLICY CMP0074)
 
-project(SPARCED)
+project(SPARCED_legacy)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -32,47 +32,47 @@ message(STATUS "Found AMICI ${Amici_DIR}")
 
 set(MODEL_DIR ${CMAKE_CURRENT_LIST_DIR})
 
-set(SRC_LIST_LIB SPARCED_Jy.cpp 
-SPARCED_dJydsigmay.cpp 
-SPARCED_dJydy.cpp 
-SPARCED_root.cpp 
-SPARCED_dwdp.cpp 
-SPARCED_dwdx.cpp 
-SPARCED_dwdw.cpp 
-SPARCED_dxdotdw.cpp 
-SPARCED_dxdotdx_explicit.cpp 
-SPARCED_dxdotdp_explicit.cpp 
-SPARCED_dydx.cpp 
-SPARCED_dydp.cpp 
-SPARCED_dsigmaydp.cpp 
-SPARCED_sigmay.cpp 
-SPARCED_stau.cpp 
-SPARCED_deltasx.cpp 
-SPARCED_w.cpp 
-SPARCED_x0.cpp 
-SPARCED_x0_fixedParameters.cpp 
-SPARCED_sx0.cpp 
-SPARCED_sx0_fixedParameters.cpp 
-SPARCED_xdot.cpp 
-SPARCED_y.cpp 
-SPARCED_x_rdata.cpp 
-SPARCED_total_cl.cpp 
-SPARCED_x_solver.cpp 
-SPARCED_dJydy_colptrs.cpp
-SPARCED_dJydy_rowvals.cpp 
-SPARCED_dwdp_colptrs.cpp
-SPARCED_dwdp_rowvals.cpp 
-SPARCED_dwdx_colptrs.cpp
-SPARCED_dwdx_rowvals.cpp 
-SPARCED_dwdw_colptrs.cpp
-SPARCED_dwdw_rowvals.cpp 
-SPARCED_dxdotdw_colptrs.cpp
-SPARCED_dxdotdw_rowvals.cpp 
-SPARCED_dxdotdx_explicit_colptrs.cpp
-SPARCED_dxdotdx_explicit_rowvals.cpp 
-SPARCED_dxdotdp_explicit_colptrs.cpp
-SPARCED_dxdotdp_explicit_rowvals.cpp 
-SPARCED.cpp
+set(SRC_LIST_LIB SPARCED_legacy_Jy.cpp 
+SPARCED_legacy_dJydsigmay.cpp 
+SPARCED_legacy_dJydy.cpp 
+SPARCED_legacy_root.cpp 
+SPARCED_legacy_dwdp.cpp 
+SPARCED_legacy_dwdx.cpp 
+SPARCED_legacy_dwdw.cpp 
+SPARCED_legacy_dxdotdw.cpp 
+SPARCED_legacy_dxdotdx_explicit.cpp 
+SPARCED_legacy_dxdotdp_explicit.cpp 
+SPARCED_legacy_dydx.cpp 
+SPARCED_legacy_dydp.cpp 
+SPARCED_legacy_dsigmaydp.cpp 
+SPARCED_legacy_sigmay.cpp 
+SPARCED_legacy_stau.cpp 
+SPARCED_legacy_deltasx.cpp 
+SPARCED_legacy_w.cpp 
+SPARCED_legacy_x0.cpp 
+SPARCED_legacy_x0_fixedParameters.cpp 
+SPARCED_legacy_sx0.cpp 
+SPARCED_legacy_sx0_fixedParameters.cpp 
+SPARCED_legacy_xdot.cpp 
+SPARCED_legacy_y.cpp 
+SPARCED_legacy_x_rdata.cpp 
+SPARCED_legacy_total_cl.cpp 
+SPARCED_legacy_x_solver.cpp 
+SPARCED_legacy_dJydy_colptrs.cpp
+SPARCED_legacy_dJydy_rowvals.cpp 
+SPARCED_legacy_dwdp_colptrs.cpp
+SPARCED_legacy_dwdp_rowvals.cpp 
+SPARCED_legacy_dwdx_colptrs.cpp
+SPARCED_legacy_dwdx_rowvals.cpp 
+SPARCED_legacy_dwdw_colptrs.cpp
+SPARCED_legacy_dwdw_rowvals.cpp 
+SPARCED_legacy_dxdotdw_colptrs.cpp
+SPARCED_legacy_dxdotdw_rowvals.cpp 
+SPARCED_legacy_dxdotdx_explicit_colptrs.cpp
+SPARCED_legacy_dxdotdx_explicit_rowvals.cpp 
+SPARCED_legacy_dxdotdp_explicit_colptrs.cpp
+SPARCED_legacy_dxdotdp_explicit_rowvals.cpp 
+SPARCED_legacy.cpp
 ${MODEL_DIR}/wrapfunctions.cpp
 )
 

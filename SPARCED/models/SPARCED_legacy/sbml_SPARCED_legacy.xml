@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
-  <model metaid="SPARCED" id="SPARCED" substanceUnits="substance" timeUnits="time_unit" volumeUnits="volume">
+  <model metaid="SPARCED_legacy" id="SPARCED_legacy" substanceUnits="substance" timeUnits="time_unit" volumeUnits="volume">
     <listOfUnitDefinitions>
       <unitDefinition id="volume">
         <listOfUnits>

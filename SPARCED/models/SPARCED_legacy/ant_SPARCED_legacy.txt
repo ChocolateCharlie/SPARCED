@@ -1,5 +1,5 @@
 # PanCancer Model by Birtwistle Lab 
-model SPARCED()
+model SPARCED_legacy()
 
   # Compartments and Species:
   Compartment Cytoplasm;   Compartment Extracellular;   Compartment Nucleus;   Compartment Mitochondrion; 
@@ -918,15 +918,6 @@ model SPARCED()
   Species m_MGMT in Cytoplasm;
   Species m_INSR in Cytoplasm;
   Species m_INS in Cytoplasm;
-
-
-  # Reactions:
-
-
-  # Reactions:
-
-
-  # Reactions:
 
 
   # Reactions:
