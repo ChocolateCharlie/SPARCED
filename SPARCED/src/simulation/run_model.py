@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from simulation.modules.RunSPARCED import RunSPARCED
-from simulation.utils.initial_conditions import load_species_initial_conditions
+from simulation.utils.initial_conditions import *
 from simulation.utils.output import save_simulation_output
 
 
@@ -58,7 +58,7 @@ def run_experiment(model_name: str, simulation_name: str,
     model.setTimepoints(np.linspace(0, exchange, 2))
     # Compute initial conditions
     if incubation_duration > 0.0:
-        species_initial_conditions = load_species_initial_conditions(sbml_model, incubation_conditions)
+        species_initial_conditions, species_names = load_species_initial_conditions(sbml_model, incubation_conditions)
     else:
         species_initial_conditions = load_species_initial_conditions(sbml_model, perturbations)
     # Run experiment
@@ -72,7 +72,8 @@ def run_experiment(model_name: str, simulation_name: str,
                           input_files["genereg"], input_files["omics"])
             for specie in range(len(species_initial_conditions)):
                 species_initial_conditions[specie] = xoutS_incub[-1:,idx]
-            # TODO: Apply perturbations
+            apply_perturbations(species_initial_conditions, species_names,
+                                perturbations)
         run_single_simulation(model, simulation_name, output_sim, cell_number, sbml_model,
                               is_deterministic, exchange, duration,
                               species_initial_conditions, verbose,

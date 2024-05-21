@@ -7,6 +7,14 @@ import libsbml
 import numpy as np
 
 
+def apply_perturbations(species_initial_conditions: np.ndarray,
+                        species_names: np.ndarray,
+                        perturbations: np.ndarray=None) -> np.ndarray:
+    if perturbations is not None:
+        for p in perturbations:
+            species_initial_conditions[np.argwhere(species_names == p[0])] = p[1]
+    return(species_initial_conditions)
+
 def load_species_initial_conditions(sbml_path: str | os.PathLike, 
                                     perturbations: np.ndarray=None) -> np.ndarray:
     """Create species initial conditions array
@@ -39,8 +47,7 @@ def load_species_initial_conditions(sbml_path: str | os.PathLike,
     # Any concentration bellow 1e-6 is considered as zero (0)
     species_initial_conditions[np.argwhere(species_initial_conditions <= 1e-6)] = 0.0
     # Apply perturbations
-    if perturbations is not None:
-        for p in perturbations:
-            species_initial_conditions[np.argwhere(species_names == p[0])] = p[1]
-    return(species_initial_conditions)
+    species_initial_conditions = apply_perturbations(species_initial_conditions,
+                                                     species_names, perturbations)
+    return(species_initial_conditions, species_names)
 
