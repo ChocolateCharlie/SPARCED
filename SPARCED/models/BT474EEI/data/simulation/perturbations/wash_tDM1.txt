@@ -1,0 +1,5 @@
+EGF	E	1.0
+Insulin	INS	17.21
+ADCext	trast_DM1_EC	0.0
+Abext	trast_EC	0.0
+PLext	DM1_EC	0.0

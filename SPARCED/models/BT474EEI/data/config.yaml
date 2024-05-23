@@ -1,0 +1,19 @@
+compilation:
+    root: "model"
+    compartments: "BT474EEI_Compartments.txt"
+    observables: "legacy_Observables.txt"
+    ratelaws: "BT474EEI_Ratelaws.txt"
+    species: "BT474EEI_Species.txt"
+    stoicmat: "BT474EEI_StoicMat.txt"
+simulation:
+    root: "simulation"
+    genereg: "legacy_GeneReg.txt"
+    omics: "legacy_OmicsData.txt"
+    perturbations:
+        root: "perturbations"
+        default: "wash_tDM1.txt"
+    incubation:
+        root: "perturbations"
+        default: "tDM1_30_nM.txt"
+        duration: 2.0
+
