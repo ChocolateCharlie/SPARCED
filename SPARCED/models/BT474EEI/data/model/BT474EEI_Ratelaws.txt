@@ -2443,12 +2443,12 @@ vTE3	Extracellular	1.00E-04
 vTE4	Extracellular	3.14E-05
 vTE5	Extracellular	1.00E-04
 vTE6	Extracellular	3.14E-05
-vTE7	Extracellular	kTE7_1*(kTE7_2/kTE7_3)*E2_EC	4.27E-05	5.25E-12	5.00E-05
-vTE8	Cytoplasm	kTE8_1*(kTE8_2/kTE8_3)*E2_endo	2.40E-05	5.00E-05	5.25E-12
-vTE9	Extracellular	kTE9_1*(kTE9_2/kTE9_3)*trast_DM1_E2_EC	4.27E-05	5.25E-12	5.00E-05
-vTE10	Cytoplasm	kTE10_1*(kTE10_2/kTE10_3)*trast_DM1_E2_endo	2.4E-05	5.00E-05	5.25E-12
-vTE11	Extracellular	kTE11_1*(kTE11_2/kTE11_3)*trast_E2_EC	4.27E-05	5.25E-12	5.00E-05
-vTE12	Cytoplasm	kTE12_1*(kTE12_2/kTE12_3)*trast_E2_endo	2.40E-05	5.00E-05	5.25E-12
+vTE7	Extracellular	kTE7_1*(kTE7_2/kTE7_3)*E2_EC	4.27E-05	3.96E-12	1.00E-09
+vTE8	Cytoplasm	kTE8_1*(kTE8_2/kTE8_3)*E2_endo	2.40E-05	1.00E-09	3.96E-12
+vTE9	Extracellular	kTE9_1*(kTE9_2/kTE9_3)*trast_DM1_E2_EC	4.27E-05	3.96E-12	1.00E-09
+vTE10	Cytoplasm	kTE10_1*(kTE10_2/kTE10_3)*trast_DM1_E2_endo	2.4E-05	1.00E-09	3.96E-12
+vTE11	Extracellular	kTE11_1*(kTE11_2/kTE11_3)*trast_E2_EC	4.27E-05	3.96E-12	1.00E-09
+vTE12	Cytoplasm	kTE12_1*(kTE12_2/kTE12_3)*trast_E2_endo	2.40E-05	1.00E-09	3.96E-12
 vTE13	Cytoplasm	1.27E-04
 vTE14	Cytoplasm	4.27E-05
 vTE15	Cytoplasm	1.27E-04
