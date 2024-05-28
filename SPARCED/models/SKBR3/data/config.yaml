@@ -1,0 +1,19 @@
+compilation:
+    root: "model"
+    compartments: "SKBR3_Compartments.txt"
+    observables: "legacy_Observables.txt"
+    ratelaws: "SKBR3_Ratelaws.txt"
+    species: "SKBR3_Species.txt"
+    stoicmat: "tDM1_StoicMat.txt"
+simulation:
+    root: "simulation"
+    genereg: "legacy_GeneReg.txt"
+    omics: "legacy_OmicsData.txt"
+    perturbations:
+        root: "perturbations"
+        default: "wash_tDM1.txt"
+    incubation:
+        root: "perturbations"
+        default: "tDM1_30_nM.txt"
+        duration: 2.0
+
