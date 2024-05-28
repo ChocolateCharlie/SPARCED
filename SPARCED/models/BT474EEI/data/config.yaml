@@ -4,7 +4,7 @@ compilation:
     observables: "legacy_Observables.txt"
     ratelaws: "BT474EEI_Ratelaws.txt"
     species: "BT474EEI_Species.txt"
-    stoicmat: "BT474EEI_StoicMat.txt"
+    stoicmat: "tDM1_StoicMat.txt"
 simulation:
     root: "simulation"
     genereg: "legacy_GeneReg.txt"
