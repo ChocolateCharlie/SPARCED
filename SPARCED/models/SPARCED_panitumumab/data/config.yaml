@@ -1,0 +1,15 @@
+compilation:
+    root: "model"
+    compartments: "legacy_Compartments.txt"
+    observables: "legacy_Observables.txt"
+    ratelaws: "panitumumab_Ratelaws.txt"
+    species: "panitumumab_Species.txt"
+    stoicmat: "panitumumab_StoicMat.txt"
+simulation:
+    root: "simulation"
+    genereg: "legacy_GeneReg.txt"
+    omics: "legacy_OmicsData.txt"
+    perturbations:
+        root: "perturbations"
+        default: "default.txt"
+
