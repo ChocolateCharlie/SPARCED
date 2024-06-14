@@ -2439,4 +2439,3 @@ vPd88	Cytoplasm	2.218213E-06
 vPd89	Cytoplasm	5.754195E-06
 vPanit1	Extracellular	1.0E-03
 vPanit2	Extracellular	5.26E-05
-
