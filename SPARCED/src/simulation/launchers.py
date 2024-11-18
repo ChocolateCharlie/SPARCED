@@ -5,6 +5,7 @@ import os
 import sys
 
 import numpy as np
+import petab
 
 from utils.arguments import parse_args
 from utils.data_handling import *
@@ -56,6 +57,9 @@ def load_perturbations(input_folder: str | os.PathLike,
                        config: dict[str, str], file: str=None) -> np.ndarray:
     """Load perturbations
 
+    Load a perturbations file structured as a TSV conditions PEtab file
+
+
     Load an input perturbations file structured as tab separated, and remove
     the first column (human-readable) to keep only the second (SPARCED symbol)
     and the third (concentration in nM) columns.
@@ -70,11 +74,29 @@ def load_perturbations(input_folder: str | os.PathLike,
     """
         
     perturbations_root = append_subfolder(input_folder, config["root"])
-    # Choose the file to load
+    # Choose between specified or default file
     if file != None:
         perturbations_file = append_subfolder(perturbations_root, file)
     else:
         perturbations_file = append_subfolder(perturbations_root, config["default"])
+
+    # Load perturbations file
+    perturbations = petab.v1.get_condition_df(perturbations_file)
+    try:
+        assert petab.v1.check_condition_def(perturbations)
+    except AssertionError:
+        print("Sanity check failure on perturbations PEtab condition table")
+        sys.exit(0)
+    try:
+        assert petab.v1.condition_table_is_parameter_free(perturbations) == True
+    except:
+        print("Parametric overrides detected - further behavior is not guaranteed.\nProceeding...")
+
+    # Create a numpy array to store the concentrations
+    Column in SPARCED symbol then concentration in nM
+    
+
+
     perturbations = load_input_data_file(perturbations_file)
     # Convert concentrations from strings to floats
     for row in perturbations:
