@@ -26,3 +26,12 @@ exclude_patterns = []
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
+html_theme_options = {
+        "announcement": "This site is currently under construction.",
+        "external_links": [
+            {"name": "To the Birtwistle lab", "url": "https://www.birtwistlelab.com"},
+            {"name": "To the Erdem lab", "url": "https://erdemlab.github.io"}
+        ],
+        "github_url": "https://github.com/SPARCED/SPARCED"
+    }
+
