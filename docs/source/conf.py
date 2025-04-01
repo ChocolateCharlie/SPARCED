@@ -40,6 +40,7 @@ extensions = [
         'sphinx.ext.viewcode'
         ]
 autosummary_generate = True
+myst_enable_extensions = ['colon_fence', 'deflist', 'dollarmath', 'amsmath']
 source_suffix = {
         '.md': 'markdown',
         '.rst': 'restructuredtext'
@@ -55,10 +56,19 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 html_theme_options = {
         'announcement': 'This site is currently under construction.',
-        'external_links': [
-            {'name': 'To the Birtwistle lab', 'url': 'https://www.birtwistlelab.com'},
-            {'name': 'To the Erdem lab', 'url': 'https://erdemlab.github.io'}
-        ],
-        'github_url': 'https://github.com/SPARCED/SPARCED'
+        'github_url': 'https://github.com/SPARCED/SPARCED',
+        'header_links_before_dropdown': 7,
+        'icon_links': [
+            {
+                'name': 'Birtwistle Lab',
+                'url': 'https://www.birtwistlelab.com',
+                'icon': 'fa-solid fa-flask',
+            },
+            {
+                'name': 'Erdem Lab',
+                'url': 'https://erdemlab.github.io',
+                'icon': 'fa-solid fa-dna'
+            }
+        ]
     }
 
