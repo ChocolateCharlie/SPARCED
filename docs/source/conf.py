@@ -24,8 +24,8 @@ sys.path.insert(0, os.path.abspath('../../SPARCED/src/utils'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'SPARCED'
-copyright = '2025, Birtwistle Lab (Clemson, SC, USA) & Erdem Lab (Umeå, Västerbotten, Sweden)'
-author = 'Birtwistle Lab (Clemson, SC, USA) & Erdem Lab (Umeå, Västerbotten, Sweden)'
+copyright = '2025, The Birtwistle Lab (Clemson, SC, USA) & The Erdem Lab (Umeå, Västerbotten, Sweden)'
+author = 'The Birtwistle & Erdem Labs'
 release = '2.0.0'
 
 # -- General configuration ---------------------------------------------------
@@ -34,13 +34,14 @@ release = '2.0.0'
 extensions = [
         'myst_parser',  # Use markdown in documentation
         'sphinx_copybutton',
+        'sphinx_design',
         'sphinx.ext.autodoc',
         'sphinx.ext.autosummary',
         'sphinx.ext.napoleon',
         'sphinx.ext.viewcode'
         ]
 autosummary_generate = True
-myst_enable_extensions = ['colon_fence', 'deflist', 'dollarmath', 'amsmath']
+myst_enable_extensions = ['colon_fence']
 source_suffix = {
         '.md': 'markdown',
         '.rst': 'restructuredtext'
@@ -52,8 +53,9 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'pydata_sphinx_theme'
+html_css_files = ['custom.css']
 html_static_path = ['_static']
+html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
         'announcement': 'This site is currently under construction.',
         'github_url': 'https://github.com/SPARCED/SPARCED',
