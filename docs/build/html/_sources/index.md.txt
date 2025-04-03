@@ -45,15 +45,15 @@ article.bd-article section {
 :::{tab-item} Cellular Pathway Modeling
 SPARCED is an ongoing project that is continuously expanded by the community.
 Extensions of the original model and additional pathway models are very welcome.
-See our {ref}`contribution guide <community/users/index>` to learn more about the process.
-If you have a question, do not hesitate to {ref}`contact <contact.md>` us.
+See our [contribution guide](community/modelers.md) to learn more about the process.
+If you have a question, do not hesitate to [contact](contact.md) us.
 :::
 
 :::{tab-item} For Developers
 Contributions to the development of SPARCED and issue reports are very welcome on
 [our GitHub repository](https://github.com/SPARCED/SPARCED).
-Technical documentation is available in the {ref}`developers guide <community/devs/index>`.
-If you have a question, do not hesitate to {ref}`contact <contact.md>` us.
+Technical documentation is available in the [developers guide](community/devs/index.md).
+If you have a question, do not hesitate to [contact](contact.md) us.
 :::
 ::::
 
@@ -65,16 +65,16 @@ The following institutions support the development and maintenance of SPARCED:
 :sd-d-flex-row:
 
 :::{grid-item}
-[![clemson_uni_logo]( _static/logo_clemson_university.svg)](website)
+[![clemson_uni_logo]( _static/logo_clemson_university.svg)](https://www.clemson.edu/)
 :::
 :::{grid-item}
-[![umea_uni_logo](_static/logo_umea_university.svg)](website)
+[![umea_uni_logo](_static/logo_umea_university.svg)](https://www.umu.se/en/)
 :::
 :::{grid-item}
-[![palmetto_logo](_static/logo_palmetto2.jpg)](website)
+[![palmetto_logo](_static/logo_palmetto2.jpg)](https://docs.rcd.clemson.edu/palmetto/)
 :::
 :::{grid-item}
-[![hpc2n_logo](_static/logo_hpc2n.png)](website)
+[![hpc2n_logo](_static/logo_hpc2n.png)](https://www.hpc2n.umu.se/)
 :::
 ::::
 

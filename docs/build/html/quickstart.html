@@ -477,6 +477,119 @@
 <li><p>Plotting</p></li>
 </ul>
 </section>
+<section id="sparced-hands-on-primer-tutorial">
+<h1>===============================================================================
+SPARCED Hands-On Primer Tutorial<a class="headerlink" href="#sparced-hands-on-primer-tutorial" title="Link to this heading">#</a></h1>
+<p>Welcome to the SPARCED Hands-On Primer Tutorial! This guide walks you through
+how to run the Python files in the SPARCED package for tasks like model compilation,
+simulations, benchmarking, and visualizations.</p>
+</section>
+<section id="prerequisites">
+<h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h1>
+<p>Before running the Python files, ensure you have the following installed:</p>
+<ol class="arabic simple">
+<li><p><strong>Python 3.10+</strong></p></li>
+<li><p>Required dependencies from <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>:
+Run:
+::
+chmod +x requirements.txt
+./requirements.txt</p></li>
+<li><p>SPARCED source code properly cloned or installed.</p></li>
+</ol>
+</section>
+<section id="running-python-scripts">
+<h1>Running Python Scripts<a class="headerlink" href="#running-python-scripts" title="Link to this heading">#</a></h1>
+<p>The SPARCED package provides various utilities for simulations, benchmarks,
+and data visualization. Below are the key Python files and their purposes.</p>
+<section id="model-compilation">
+<h2>Model Compilation<a class="headerlink" href="#model-compilation" title="Link to this heading">#</a></h2>
+<p>To compile a model using Antimony or SBML, use the following script:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/compilation/create_model.py --input &lt;path/to/model/file&gt; --output &lt;path/to/output&gt;
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;path/to/model/file&gt;</span></code> with the location of your Antimony or SBML model and <code class="docutils literal notranslate"><span class="pre">&lt;path/to/output&gt;</span></code> with the desired output path.</p>
+</section>
+<section id="simulation-execution">
+<h2>Simulation Execution<a class="headerlink" href="#simulation-execution" title="Link to this heading">#</a></h2>
+<p>Run a simulation using pre-defined models and conditions:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/simulation/run_model.py --model SPARCED_standard --condition &lt;condition_file&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--model</span></code>: Specify the model name (e.g., <code class="docutils literal notranslate"><span class="pre">SPARCED_standard</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--condition</span></code>: Path to the condition file for the simulation.</p></li>
+</ul>
+<p>For example:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/simulation/run_model.py --model SPARCED_standard --condition data/simulation/standard_GeneReg.txt
+</pre></div>
+</div>
+</section>
+<section id="benchmark-generation">
+<h2>Benchmark Generation<a class="headerlink" href="#benchmark-generation" title="Link to this heading">#</a></h2>
+<p>To generate a benchmark, use:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/benchmarking/creation/new-benchmark-generator.py --output benchmarks/new_benchmark.yml
+</pre></div>
+</div>
+<p>This will create a new benchmark YAML file in the specified location.</p>
+</section>
+<section id="benchmark-validation">
+<h2>Benchmark Validation<a class="headerlink" href="#benchmark-validation" title="Link to this heading">#</a></h2>
+<p>To validate a model against a benchmark:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/benchmarking/simulation/model-benchmark-validation.py --benchmark benchmarks/new_benchmark.yml
+</pre></div>
+</div>
+</section>
+<section id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Link to this heading">#</a></h2>
+<p>Visualize simulation results using:</p>
+<p>.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/benchmarking/visualization/visualization.py --input &lt;path/to/results&gt; --output &lt;path/to/visualization&gt;
+</pre></div>
+</div>
+<p>This script processes the results and generates graphical outputs.</p>
+</section>
+</section>
+<section id="key-examples">
+<h1>Key Examples<a class="headerlink" href="#key-examples" title="Link to this heading">#</a></h1>
+<p>Here are some hands-on examples to get you started:</p>
+<ol class="arabic">
+<li><p><strong>Running a Simple Model Simulation</strong>:
+.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/simulation/run_model.py --model SPARCED_standard --condition data/simulation/standard_GeneReg.txt
+</pre></div>
+</div>
+</li>
+<li><p><strong>Validating a Model Against Benchmarks</strong>:
+.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/simulation/model-benchmark-validation.py --benchmark benchmarks/TRAIl_percent-death.yml
+</pre></div>
+</div>
+</li>
+<li><p><strong>Generating a Custom Visualization</strong>:
+.. code-block:: bash</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python src/visualization/visualization.py --input results/New-Simulation/Control --output figures/Control_Visualization.png
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="additional-resources">
+<h1>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>For more details, refer to the <strong>SPARCED Documentation</strong>.</p></li>
+<li><p>Check out the Jupyter notebooks in the <code class="docutils literal notranslate"><span class="pre">examples/notebooks</span></code> directory for interactive tutorials.</p></li>
+</ul>
+</section>
+<section id="questions-or-issues">
+<h1>Questions or Issues?<a class="headerlink" href="#questions-or-issues" title="Link to this heading">#</a></h1>
+<p>If you encounter any issues, feel free to open an issue on the GitHub repository
+or contact the SPARCED support team.</p>
+</section>
 
 
                 </article>
@@ -516,6 +629,33 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Quickstart</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sparced-hands-on-primer-tutorial">===============================================================================
+SPARCED Hands-On Primer Tutorial</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#running-python-scripts">Running Python Scripts</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-compilation">Model Compilation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simulation-execution">Simulation Execution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmark-generation">Benchmark Generation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmark-validation">Benchmark Validation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">Visualization</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-examples">Key Examples</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-or-issues">Questions or Issues?</a></li>
+</ul>
+
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">

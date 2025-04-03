@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; SPARCED 2.0.0 documentation</title>
+    <title>Installation of the Development Environment &#8212; SPARCED 2.0.0 documentation</title>
   
   
   
@@ -50,6 +50,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/devs/installation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Organization of the Source Code" href="codebase.html" />
+    <link rel="prev" title="Developers Guide" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -166,7 +168,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
     Contribute
   </a>
@@ -276,10 +278,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -329,7 +329,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
     Contribute
   </a>
@@ -404,6 +404,31 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../modelers.html">Modeling Contributions</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">For Developers</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Installation of the Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codebase.html">Organization of the Code</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/summary.html">Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html">Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html">General Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html">Simulation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="style.html">Coding Style Guidelines</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../code_of_conduct.html">Code of Conduct</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -439,7 +464,13 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Contributors Guide</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Developers Guide</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Installation of the Development Environment</span></li>
   </ul>
 </nav>
 </div>
@@ -456,7 +487,70 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section id="installation-of-the-development-environment">
+<h1>Installation of the Development Environment<a class="headerlink" href="#installation-of-the-development-environment" title="Link to this heading">#</a></h1>
+<p>Installation guide for developers</p>
+<section id="developer-s-installation-guide">
+<h2>Developer’s Installation Guide<a class="headerlink" href="#developer-s-installation-guide" title="Link to this heading">#</a></h2>
+<section id="ubuntu-based-installation">
+<h3>Ubuntu-based Installation<a class="headerlink" href="#ubuntu-based-installation" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"> <span class="pre">requirements.txt</span></code> file provided in the project root directory is an executable BASH script designed to install SPARCED dependencies in Ubuntu 22.04. Installation is seamless when using the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file, which is reliant on a <a class="reference external" href="https://peps.python.org/pep-0621/">PEP 621 - adherent</a> <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file located adjacently in the project root directory.</p>
+<p>To install, execute the following commands within the SPARCED root directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>./requirements.txt<span class="w"> </span><span class="c1"># provides authorized installation access</span>
+./requirements.txt<span class="w"> </span><span class="c1"># Installation command</span>
+</pre></div>
+</div>
+<p>After installation is complete, restart your shell for the changes to take effect.</p>
+<section id="installation-verification">
+<h4>Installation verification<a class="headerlink" href="#installation-verification" title="Link to this heading">#</a></h4>
+<p>After installation is complete, test the installation via:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sparced<span class="w"> </span>-h
+</pre></div>
+</div>
+<p>⚠️ Note: Ubuntu users might have to restart their shell session for the changes to take effect. ⚠️</p>
+<p>Correct installation should output the following help information:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">SPARCED</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">{</span><span class="nb">compile</span><span class="p">,</span><span class="n">simulate</span><span class="p">,</span><span class="n">validate</span><span class="p">}</span> <span class="o">...</span>
+
+<span class="n">SPARCED</span> <span class="n">CLI</span> <span class="n">tool</span><span class="o">.</span>
+
+<span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span>
+  <span class="p">{</span><span class="nb">compile</span><span class="p">,</span><span class="n">simulate</span><span class="p">,</span><span class="n">validate</span><span class="p">}</span>
+                        <span class="n">Subcommands</span><span class="p">:</span> <span class="nb">compile</span><span class="p">,</span> <span class="n">simulate</span><span class="p">,</span> <span class="n">validate</span><span class="p">,</span> <span class="n">visualize</span>
+    <span class="nb">compile</span>             <span class="n">Compile</span> <span class="n">a</span> <span class="n">model</span><span class="o">.</span>
+    <span class="n">simulate</span>            <span class="n">Run</span> <span class="n">a</span> <span class="n">simulation</span><span class="o">.</span>
+    <span class="n">validate</span>            <span class="n">Benchmark</span> <span class="n">a</span> <span class="n">model</span><span class="o">.</span>
+    <span class="n">visualize</span>           <span class="n">Visualize</span> <span class="n">a</span> <span class="n">dataset</span><span class="o">.</span>
+
+<span class="n">options</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">show</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="anaconda-based-installation">
+<h3>Anaconda-based Installation<a class="headerlink" href="#anaconda-based-installation" title="Link to this heading">#</a></h3>
+<p>For further support, an Anaconda <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> is provided. Note, installation via Anaconda inhibits the use of the command line functionality. Individual scripts are still executable, an example is provided below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Send critical install variables to the .bashrc file:</span>
+<span class="n">export</span> <span class="n">BLAS_LIBS</span><span class="o">=-</span><span class="n">lopenblas</span>
+
+<span class="c1"># Install necessary SPARCED dependencies</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">openmpi</span><span class="o">-</span><span class="nb">bin</span> <span class="n">openmpi</span><span class="o">-</span><span class="n">common</span> <span class="n">libopenmpi</span><span class="o">-</span><span class="n">dev</span> \
+		<span class="n">gcc</span> <span class="n">libopenblas</span><span class="o">-</span><span class="n">dev</span> <span class="n">g</span><span class="o">++</span> <span class="n">cmake</span> <span class="n">make</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">pipx</span> \
+		<span class="n">libgfortran5</span> <span class="n">libatomic1</span> <span class="n">swig</span> <span class="n">libhdf5</span><span class="o">-</span><span class="n">dev</span> <span class="n">libsbml</span><span class="o">-</span><span class="n">dev</span>
+
+<span class="c1"># Installs python dependencies to run the SPARCED-tools </span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+
+<span class="c1"># Activate the conda environment</span>
+<span class="n">source</span> <span class="n">activate</span> <span class="n">sparced</span>
+
+</pre></div>
+</div>
+<p>Congratulations! You now have a full setup of SPARCED! 🦠</p>
+</section>
+</section>
+</section>
+
 
                 </article>
               
@@ -467,6 +561,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Developers Guide</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="codebase.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Organization of the Source Code</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -485,9 +597,16 @@
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developer-s-installation-guide">Developer’s Installation Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu-based-installation">Ubuntu-based Installation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-verification">Installation verification</a></li>
 </ul>
-
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-based-installation">Anaconda-based Installation</a></li>
+</ul>
+</li>
+</ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
