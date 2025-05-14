@@ -32,15 +32,18 @@ release = '2.0.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-        'myst_parser',  # Use markdown in documentation
+        'sphinx.ext.autodoc', # Extensions are order sensitive... Keep autodoc at the top when making edits.
+        'myst_parser',
+        'sphinx_autodoc_typehints',
         'sphinx_copybutton',
         'sphinx_design',
-        'sphinx.ext.autodoc',
         'sphinx.ext.autosummary',
+        'sphinx.ext.coverage',
         'sphinx.ext.napoleon',
         'sphinx.ext.viewcode'
         ]
 autosummary_generate = True
+autodoc_mock_imports = ["compilation"]
 myst_enable_extensions = ['colon_fence']
 source_suffix = {
         '.md': 'markdown',
@@ -49,11 +52,14 @@ source_suffix = {
 
 templates_path = ['_templates']
 exclude_patterns = []
-
+# -- Napoleon configuration --------------------------------------------------
+napoleon_google_docstring = True
+napoleon_nympy_docstring = False
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_css_files = ['custom.css']
+html_show_sourcelink = False
 html_static_path = ['_static']
 html_theme = 'pydata_sphinx_theme'
 html_theme_options = {

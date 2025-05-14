@@ -62,7 +62,6 @@ If you have a question, do not hesitate to [contact](contact.md) us.
 The following institutions support the development and maintenance of SPARCED:
 
 ::::{grid} 2 2 4 4
-:sd-d-flex-row:
 
 :::{grid-item}
 [![clemson_uni_logo]( _static/logo_clemson_university.svg)](https://www.clemson.edu/)

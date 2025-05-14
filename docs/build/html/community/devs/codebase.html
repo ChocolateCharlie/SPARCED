@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Organization of the Source Code &#8212; SPARCED 2.0.0 documentation</title>
+    <title>&lt;no title&gt; &#8212; SPARCED 2.0.0 documentation</title>
   
   
   
@@ -50,7 +50,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/devs/codebase';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Reference Documentation" href="reference/summary.html" />
+    <link rel="next" title="Experiment module" href="reference/Experiment.html" />
     <link rel="prev" title="Installation of the Development Environment" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -264,10 +264,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -409,21 +405,54 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modelers.html">Modeling Contributions</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">For Developers</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">For Developers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation.html">Installation of the Development Environment</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Organization of the Code</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="reference/summary.html">Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="reference/data.html">Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="reference/utils.html">General Utilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html">Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Experiment.html">Experiment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Model.html">Model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Simulation.html">Simulation module</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/compilation.html">compilation package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/constants.html">constants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/data.html">Data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/modules.html">src</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html">Experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html">Model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html">Simulation module</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="reference/compilation.html">compilation package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/constants.html">constants module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html">General Utilities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/simulation.html">Simulation</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="reference/summary.html">Reference Documentation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html">Data</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html">General Utilities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="style.html">Coding Style Guidelines</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../institutions.html">Institutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
 </div>
 </nav></div>
@@ -470,7 +499,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Developers Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Organization of the Source Code</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
   </ul>
 </nav>
 </div>
@@ -487,10 +516,324 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="organization-of-the-source-code">
-<h1>Organization of the Source Code<a class="headerlink" href="#organization-of-the-source-code" title="Link to this heading">#</a></h1>
-<p>Details</p>
-</section>
+  <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/Experiment.html">Experiment module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment"><code class="docutils literal notranslate"><span class="pre">Experiment</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.apply_perturbations"><code class="docutils literal notranslate"><span class="pre">Experiment.apply_perturbations()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.extract_species_initial_conditions"><code class="docutils literal notranslate"><span class="pre">Experiment.extract_species_initial_conditions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.load_model_module"><code class="docutils literal notranslate"><span class="pre">Experiment.load_model_module()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.run"><code class="docutils literal notranslate"><span class="pre">Experiment.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.sanitize_nb_replicates"><code class="docutils literal notranslate"><span class="pre">Experiment.sanitize_nb_replicates()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Experiment.html#Experiment.NegativeNumberOfReplicates"><code class="docutils literal notranslate"><span class="pre">NegativeNumberOfReplicates</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/Model.html">Model module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/Model.html#Model.EmptyModelName"><code class="docutils literal notranslate"><span class="pre">EmptyModelName</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Model.html#Model.InvalidModelName"><code class="docutils literal notranslate"><span class="pre">InvalidModelName</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Model.html#Model.Model"><code class="docutils literal notranslate"><span class="pre">Model</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.name"><code class="docutils literal notranslate"><span class="pre">Model.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.path"><code class="docutils literal notranslate"><span class="pre">Model.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.configuration"><code class="docutils literal notranslate"><span class="pre">Model.configuration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.data_location"><code class="docutils literal notranslate"><span class="pre">Model.data_location</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_config"><code class="docutils literal notranslate"><span class="pre">Model.compilation_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_data_path"><code class="docutils literal notranslate"><span class="pre">Model.compilation_data_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_files"><code class="docutils literal notranslate"><span class="pre">Model.compilation_files</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.compartments"><code class="docutils literal notranslate"><span class="pre">Model.compartments</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.Methods"><code class="docutils literal notranslate"><span class="pre">Model.Methods</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.load_compartments"><code class="docutils literal notranslate"><span class="pre">Model.load_compartments()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.load_files_path"><code class="docutils literal notranslate"><span class="pre">Model.load_files_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model.sanitize_name"><code class="docutils literal notranslate"><span class="pre">Model.sanitize_name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/Simulation.html">Simulation module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation"><code class="docutils literal notranslate"><span class="pre">Simulation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.duration"><code class="docutils literal notranslate"><span class="pre">Simulation.duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.is_deterministic"><code class="docutils literal notranslate"><span class="pre">Simulation.is_deterministic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.name"><code class="docutils literal notranslate"><span class="pre">Simulation.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.number"><code class="docutils literal notranslate"><span class="pre">Simulation.number</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.output_directory"><code class="docutils literal notranslate"><span class="pre">Simulation.output_directory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.run"><code class="docutils literal notranslate"><span class="pre">Simulation.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.save"><code class="docutils literal notranslate"><span class="pre">Simulation.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.verbose"><code class="docutils literal notranslate"><span class="pre">Simulation.verbose</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/compilation.html">compilation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.creation">compilation.amici_scripts.creation module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.legacy">compilation.amici_scripts.legacy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.creation">compilation.antimony_scripts.creation module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.definitions">compilation.antimony_scripts.definitions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.initial_conditions">compilation.antimony_scripts.initial_conditions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.reactions">compilation.antimony_scripts.reactions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.antimony_to_sbml">compilation.conversion_scripts.antimony_to_sbml module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.sbml_to_amici">compilation.conversion_scripts.sbml_to_amici module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.annotations">compilation.sbml_scripts.annotations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.creation">compilation.sbml_scripts.creation module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.html#module-compilation.compilation">compilation.compilation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.html#module-compilation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.amici_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.creation">compilation.amici_scripts.creation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.legacy">compilation.amici_scripts.legacy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.creation">compilation.antimony_scripts.creation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.definitions">compilation.antimony_scripts.definitions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.initial_conditions">compilation.antimony_scripts.initial_conditions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.reactions">compilation.antimony_scripts.reactions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.conversion_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.antimony_to_sbml">compilation.conversion_scripts.antimony_to_sbml module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.sbml_to_amici">compilation.conversion_scripts.sbml_to_amici module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.sbml_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.annotations">compilation.sbml_scripts.annotations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.creation">compilation.sbml_scripts.creation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/constants.html">constants module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/data.html">Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/data.html#core">Core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#compartments">Compartments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#observables">Observables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#ratelaws">Ratelaws</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#species">Species</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#stoicmat">StoicMat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/data.html#simulation">Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#ligands">ligands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#genereg">GeneReg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html#omicsdata">OmicsData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/modules.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/Experiment.html">Experiment module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment"><code class="docutils literal notranslate"><span class="pre">Experiment</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.apply_perturbations"><code class="docutils literal notranslate"><span class="pre">Experiment.apply_perturbations()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.extract_species_initial_conditions"><code class="docutils literal notranslate"><span class="pre">Experiment.extract_species_initial_conditions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.load_model_module"><code class="docutils literal notranslate"><span class="pre">Experiment.load_model_module()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.run"><code class="docutils literal notranslate"><span class="pre">Experiment.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Experiment.html#Experiment.Experiment.sanitize_nb_replicates"><code class="docutils literal notranslate"><span class="pre">Experiment.sanitize_nb_replicates()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Experiment.html#Experiment.NegativeNumberOfReplicates"><code class="docutils literal notranslate"><span class="pre">NegativeNumberOfReplicates</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Model.html">Model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.EmptyModelName"><code class="docutils literal notranslate"><span class="pre">EmptyModelName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.InvalidModelName"><code class="docutils literal notranslate"><span class="pre">InvalidModelName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/Model.html#Model.Model"><code class="docutils literal notranslate"><span class="pre">Model</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.name"><code class="docutils literal notranslate"><span class="pre">Model.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.path"><code class="docutils literal notranslate"><span class="pre">Model.path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.configuration"><code class="docutils literal notranslate"><span class="pre">Model.configuration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.data_location"><code class="docutils literal notranslate"><span class="pre">Model.data_location</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_config"><code class="docutils literal notranslate"><span class="pre">Model.compilation_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_data_path"><code class="docutils literal notranslate"><span class="pre">Model.compilation_data_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.compilation_files"><code class="docutils literal notranslate"><span class="pre">Model.compilation_files</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.compartments"><code class="docutils literal notranslate"><span class="pre">Model.compartments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.Methods"><code class="docutils literal notranslate"><span class="pre">Model.Methods</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.load_compartments"><code class="docutils literal notranslate"><span class="pre">Model.load_compartments()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.load_files_path"><code class="docutils literal notranslate"><span class="pre">Model.load_files_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Model.html#Model.Model.sanitize_name"><code class="docutils literal notranslate"><span class="pre">Model.sanitize_name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/Simulation.html">Simulation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation"><code class="docutils literal notranslate"><span class="pre">Simulation</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.duration"><code class="docutils literal notranslate"><span class="pre">Simulation.duration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.is_deterministic"><code class="docutils literal notranslate"><span class="pre">Simulation.is_deterministic</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.name"><code class="docutils literal notranslate"><span class="pre">Simulation.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.number"><code class="docutils literal notranslate"><span class="pre">Simulation.number</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.output_directory"><code class="docutils literal notranslate"><span class="pre">Simulation.output_directory</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.run"><code class="docutils literal notranslate"><span class="pre">Simulation.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.save"><code class="docutils literal notranslate"><span class="pre">Simulation.save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/Simulation.html#Simulation.Simulation.verbose"><code class="docutils literal notranslate"><span class="pre">Simulation.verbose</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/compilation.html">compilation package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.amici_scripts.html">compilation.amici_scripts package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.amici_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.creation">compilation.amici_scripts.creation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts.legacy">compilation.amici_scripts.legacy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.amici_scripts.html#module-compilation.amici_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.antimony_scripts.html">compilation.antimony_scripts package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.creation">compilation.antimony_scripts.creation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.definitions">compilation.antimony_scripts.definitions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.initial_conditions">compilation.antimony_scripts.initial_conditions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts.reactions">compilation.antimony_scripts.reactions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.antimony_scripts.html#module-compilation.antimony_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.conversion_scripts.html">compilation.conversion_scripts package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.conversion_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.antimony_to_sbml">compilation.conversion_scripts.antimony_to_sbml module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts.sbml_to_amici">compilation.conversion_scripts.sbml_to_amici module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.conversion_scripts.html#module-compilation.conversion_scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/compilation.sbml_scripts.html">compilation.sbml_scripts package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.sbml_scripts.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.annotations">compilation.sbml_scripts.annotations module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts.creation">compilation.sbml_scripts.creation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/compilation.sbml_scripts.html#module-compilation.sbml_scripts">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.html#module-compilation.compilation">compilation.compilation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/compilation.html#module-compilation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/constants.html">constants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/simulation.html">Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/simulation.html#experiment.create_experiment"><code class="docutils literal notranslate"><span class="pre">create_experiment()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/simulation.html#experiment.run_experiment"><code class="docutils literal notranslate"><span class="pre">run_experiment()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html#modules">Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html">General Utilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#arguments">Arguments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#arguments.parse_args"><code class="docutils literal notranslate"><span class="pre">parse_args()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#combine-results">Combine results</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#combine_results.combine_results"><code class="docutils literal notranslate"><span class="pre">combine_results()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#data-handling">Data handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#data_handling.load_configuration_file"><code class="docutils literal notranslate"><span class="pre">load_configuration_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#data_handling.load_input_data_file"><code class="docutils literal notranslate"><span class="pre">load_input_data_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#data_handling.load_petab_conditions_file"><code class="docutils literal notranslate"><span class="pre">load_petab_conditions_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#data_handling.load_species_from_sbml"><code class="docutils literal notranslate"><span class="pre">load_species_from_sbml()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#files-handling">Files handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#files_handling.append_subfolder"><code class="docutils literal notranslate"><span class="pre">append_subfolder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#files_handling.check_path_existence"><code class="docutils literal notranslate"><span class="pre">check_path_existence()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/utils.html#files_handling.convert_excel_to_tsv"><code class="docutils literal notranslate"><span class="pre">convert_excel_to_tsv()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/simulation.html">Simulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/simulation.html#general">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html#experiment.create_experiment"><code class="docutils literal notranslate"><span class="pre">create_experiment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/simulation.html#experiment.run_experiment"><code class="docutils literal notranslate"><span class="pre">run_experiment()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/simulation.html#modules">Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/summary.html">Reference Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/summary.html#models">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/summary.html#input-files">Input files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/data.html">Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/data.html#core">Core</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#compartments">Compartments</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#observables">Observables</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#ratelaws">Ratelaws</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#species">Species</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#stoicmat">StoicMat</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/data.html#simulation">Simulation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#ligands">ligands</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#genereg">GeneReg</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/data.html#omicsdata">OmicsData</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/summary.html#module-SPARCED.src">Source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/utils.html">General Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html#arguments">Arguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#arguments.parse_args"><code class="docutils literal notranslate"><span class="pre">parse_args()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html#combine-results">Combine results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#combine_results.combine_results"><code class="docutils literal notranslate"><span class="pre">combine_results()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html#data-handling">Data handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#data_handling.load_configuration_file"><code class="docutils literal notranslate"><span class="pre">load_configuration_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#data_handling.load_input_data_file"><code class="docutils literal notranslate"><span class="pre">load_input_data_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#data_handling.load_petab_conditions_file"><code class="docutils literal notranslate"><span class="pre">load_petab_conditions_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#data_handling.load_species_from_sbml"><code class="docutils literal notranslate"><span class="pre">load_species_from_sbml()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html#files-handling">Files handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#files_handling.append_subfolder"><code class="docutils literal notranslate"><span class="pre">append_subfolder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#files_handling.check_path_existence"><code class="docutils literal notranslate"><span class="pre">check_path_existence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="reference/utils.html#files_handling.convert_excel_to_tsv"><code class="docutils literal notranslate"><span class="pre">convert_excel_to_tsv()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 
 
                 </article>
@@ -512,11 +855,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="reference/summary.html"
+       href="reference/Experiment.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Reference Documentation</p>
+        <p class="prev-next-title">Experiment module</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -526,21 +869,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/community/devs/codebase.md.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
-
-</div></div>
               
             
           </div>

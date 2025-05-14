@@ -3,11 +3,12 @@
 Explanations
 
 :::{toctree}
-:maxdepth: 1
+:maxdepth: 5
+:glob:
 
 Installation of the Development Environment <installation.md>
-Organization of the Code <codebase.md>
-Reference <reference/summary.rst>
+Organization of the Code <codebase.rst>
+Reference <reference/_autosummary>
 Coding Style Guidelines  <style.md>
 :::
 

@@ -15,7 +15,9 @@ Input files
 
 Source code
 -------------------------------------------------------------------------------
-.. toctree::
-   utils
-   simulation
+
+.. automodule:: SPARCED.src
+   :members:
+   :imported-members:
+
 
