@@ -50,8 +50,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/devs/reference/data';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Coding Style Guidelines" href="../style.html" />
-    <link rel="prev" title="Reference Documentation" href="summary.html" />
+    <link rel="next" title="src" href="modules.html" />
+    <link rel="prev" title="constants module" href="constants.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -413,11 +413,44 @@
 <li class="toctree-l1"><a class="reference internal" href="../../modelers.html">Modeling Contributions</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">For Developers</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../installation.html">Installation of the Development Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../codebase.html">Organization of the Code</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="summary.html">Reference</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Experiment.html">Experiment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Model.html">Model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simulation.html">Simulation module</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="compilation.html">compilation package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">constants module</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="modules.html">src</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Experiment.html">Experiment module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Model.html">Model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Simulation.html">Simulation module</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="compilation.html">compilation package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="compilation.amici_scripts.html">compilation.amici_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compilation.antimony_scripts.html">compilation.antimony_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compilation.conversion_scripts.html">compilation.conversion_scripts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compilation.sbml_scripts.html">compilation.sbml_scripts package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="constants.html">constants module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulation.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html">General Utilities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="simulation.html">Simulation</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="summary.html">Reference Documentation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Data</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">General Utilities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../style.html">Coding Style Guidelines</a></li>
 </ul>
 </details></li>
@@ -471,7 +504,7 @@
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Developers Guide</a></li>
     
     
-    <li class="breadcrumb-item"><a href="summary.html" class="nav-link">Reference Documentation</a></li>
+    <li class="breadcrumb-item"><a href="../codebase.html" class="nav-link">&lt;no title&gt;</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Data</span></li>
   </ul>
@@ -575,20 +608,20 @@ model simulation.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="summary.html"
+       href="constants.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Reference Documentation</p>
+        <p class="prev-next-title">constants module</p>
       </div>
     </a>
     <a class="right-next"
-       href="../style.html"
+       href="modules.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coding Style Guidelines</p>
+        <p class="prev-next-title">src</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
