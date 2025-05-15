@@ -43,7 +43,7 @@ extensions = [
         'sphinx.ext.viewcode'
         ]
 autosummary_generate = True
-autodoc_mock_imports = ["compilation"]
+autodoc_mock_imports = ["amici", "compilation"]
 myst_enable_extensions = ['colon_fence']
 source_suffix = {
         '.md': 'markdown',
