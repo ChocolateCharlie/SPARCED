@@ -34,7 +34,7 @@ release = '2.0.0'
 extensions = [
         'sphinx.ext.autodoc', # Extensions are order sensitive... Keep autodoc at the top when making edits.
         'myst_parser',
-        'sphinx_autodoc_typehints',
+        # 'sphinx_autodoc_typehints',
         'sphinx_copybutton',
         'sphinx_design',
         'sphinx.ext.autosummary',
