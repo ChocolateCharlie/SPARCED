@@ -50,7 +50,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'about/definitions';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="ODE and SGE Modules" href="math.html" />
+    <link rel="next" title="Core Mathematical Framework" href="math.html" />
     <link rel="prev" title="About" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -407,7 +407,8 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Terminology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math.html">ODE and SGE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">Core Mathematical Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regulatory.html">Regulatory Compliance for Pharmaceutical Industry</a></li>
 </ul>
 </div>
 </nav></div>
@@ -470,12 +471,94 @@
                   
   <section id="terminology">
 <h1>Terminology<a class="headerlink" href="#terminology" title="Link to this heading">#</a></h1>
-<p>Entity types definitions of:</p>
-<ul class="simple">
-<li><p>species</p></li>
-<li><p>parameters</p></li>
-<li><p>…</p></li>
-</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 sd-p-2 sd-outline-muted sd-rounded-1 docutils">
+<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
+<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
+<div class="sd-container-fluid sd-sphinx-override docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0">Aurore K. Amrit</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>May 15, 2025</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>8 min read</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>AMICI (Advanced Multilanguage Interface to CVODES and IDAS)</strong>
+AMICI is a high-performance simulation engine used internally by SPARCED to
+compile and solve ODE-based models. It provides efficient numerical integration,
+sensitivity analysis, and supports both deterministic and stochastic
+simulations.</p>
+<p><strong>CLI (Command-Line Interface)</strong>
+SPARCED provides a CLI that allows users to interact with the pipeline,
+run simulations, generate documentation, and manage models without writing
+code.</p>
+<p><strong>Compilation</strong>
+Compilation in SPARCED refers to the transformation of the model
+(typically defined in SBML or structured input files) into a low-level,
+executable format using the AMICI engine. This step enables efficient
+numerical simulation.</p>
+<p><strong>Deterministic (Simulation) Mode</strong>
+In deterministic simulations, the system’s behavior is fully determined by
+the initial conditions and parameters, with no randomness involved.
+SPARCED uses ODEs to perform deterministic simulations, providing consistent
+and reproducible results for a given input.</p>
+<p><strong>Docker</strong>
+Docker is a platform for containerizing applications, ensuring that software
+runs reliably across different computing environments. SPARCED is distributed
+with a Docker container that encapsulates all dependencies, making it easy to
+deploy and run the pipeline on any system without manual setup.</p>
+<p><strong>Evaluation</strong>
+The process of verifying and validating a model’s structure and behavior
+against experimental data or expected outcomes.</p>
+<p><strong>Jupyter Notebook</strong>
+A Jupyter Notebook is an interactive computational environment that allows
+users to combine code, text, and visualizations in a single document.
+SPARCED supports Jupyter Notebooks for running simulations, analyzing results,
+and documenting workflows in a reproducible and user-friendly format.</p>
+<p><strong>Ordinary Differential Equations (ODEs)</strong>
+ODEs describe the continuous time evolution of species concentrations in
+deterministic models. Each ODE corresponds to a species and is derived from the
+net effect of all reactions involving that species.</p>
+<p><strong>Parameters</strong>
+Parameters are fixed numerical values used in the model to define reaction
+rates.</p>
+<p><strong>Rate Laws</strong>
+A rate law defines the mathematical expression that governs the speed of a
+reaction. It typically depends on the concentrations of reactants and
+associated parameters, and can follow mass-action kinetics,
+Michaelis-Menten kinetics, or custom formulations.</p>
+<p><strong>SBML (Systems Biology Markup Language)</strong>
+SBML is a standardized XML-based format for representing computational models
+in systems biology. SPARCED uses SBML as a core format for model definition
+and interoperability.</p>
+<p><strong>Sensitivity Analysis</strong>
+A technique used to determine how variations in model parameters affect model
+outputs. SPARCED includes tools to perform sensitivity analysis, which is
+crucial for model validation and robustness assessment.</p>
+<p><strong>Simulation</strong>
+Simulation is the process of numerically solving the model equations
+over time to predict the behavior of species under given conditions.
+SPARCED supports both deterministic and stochastic simulations.</p>
+<p><strong>Species</strong>
+A species represents a molecular entity in the model, such as a protein, mRNA,
+complex, or small molecule. Each species has a concentration or count that
+evolves over time according to the model’s dynamics.</p>
+<p><strong>Stochastic Gene Expression (SGE)</strong>
+SGE refers to the stochastic (random) modeling of gene expression events, such
+as transcription and translation. In SPARCED, SGE introduces probabilistic
+behavior into gene regulation to simulate cell-to-cell variability.</p>
+<p><strong>Stochastic (Simulation) Mode</strong>
+Stochastic simulations incorporate randomness to model the inherent variability
+in biological systems, especially at the single-cell level. In SPARCED,
+stochasticity is introduced through the SGE module, allowing simulations to
+capture gene expression noise and other probabilistic events.</p>
 </section>
 
 
@@ -502,7 +585,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ODE and SGE Modules</p>
+        <p class="prev-next-title">Core Mathematical Framework</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

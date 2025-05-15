@@ -1,35 +1,51 @@
 # About
 
-SPARCED is a simple and efficient pipeline for constructing, merging, expanding and simulating large-scale, single-cell mechanistic models.
+SPARCED is an open-source, scalable, and user-friendly computational pipeline
+designed for constructing, merging, expanding, and simulating large-scale,
+single-cell mechanistic models. It enables researchers to explore complex
+intracellular dynamics with minimal setup, whether running small-scale
+experiments locally or deploying large-scale simulations on high-performance
+computing (HPC) clusters.
 
-With minimal set-up, users can configure small-scale experiments on their local machines, is it through Jupyter Notebooks or CLI.
-SPARCED is also compatible with cluster running and parallelization.
+The name SPARCED is an acronym representing the core biological modules
+integrated into the main model designed with that pipeline: **S**BML,
+**P**roliferation, **A**poptosis, **R**eceptor signaling, **C**ell cycle,
+**E**xpression, and **D**NA damage. These modules collectively form one of the
+most comprehensive mechanistic models of a human cell currently available in
+the literature _[1]_.
 
-The acronym SPARCED stands for **S**BML, **P**roliferation, **A**poptosis, **R**eceptor signaling, **C**ell cycle, **E**xpression & **D**NA damage, which are sub-models of the large-scale mechanistic model.
+SPARCED is designed with accessibility and extensibility in mind. Users can
+interact with the platform through Python scripts, Jupyter Notebooks, or a
+built-in command-line interface — so no advanced programming skills required.
+The tool supports collaborative development, modular pathway integration,
+and parameter customization, making it ideal for both novice users and expert
+modelers. Moreover, its containerized distribution ensures reproducibility
+and ease of deployment across diverse computing environments.
 
+Originally developed for systems biology _[2]_, SPARCED has demonstrated its
+utility to support quantitative sytems pharmacology (QSP) applications through
+virtual dose-response assays, successfully replicating _in vitro_ data and
+offering insights into cell-to-cell variability _[3]_.
 
-Verbal in-depth description of the project.
+By leveraging open-source modularity, collaborative development, and HPC
+compatibility, SPARCED enables scalable construction and simulation of large
+mechanistic models for systems biology and QSP applications.
 
+## Get Started
 
-# About
+  - Deep-dive into the [Quickstart Tutorial](../quickstart.md)
+  - Read the [User Guide](../user_guide/index.md) 
 
-SPARCED is a simple and efficient pipeline for constructing, merging, expanding
-and simulating large-scale, single-cell mechanistic models.
+Learn more about SPARCED's scientific rationale and core features in the
+following pages of this section:
 
-With minimal set-up, users can configure small-scale experiments on their local
-machines, is it through pure Python scripts or Jupyter Notebooks.
-SPARCED is also compatible with cluster running and parallelization.
+:::{toctree}
+:maxdepth: 1
 
-The acronym SPARCED stands for _**S**BML, **P**roliferation, **A**poptosis,
-**R**eceptor signaling, **C**ell cycle, **E**xpression & **D**NA damage_, which
-are sub-models of the large-scale mechanistic model.
-
-## Instructions & Beginners
-
-To learn 
-
-A beginner's installation guide of SPARCED for newcomers in computer science
-is available [here](installation-guide.md)
+Terminology <definitions.md>
+Core Mathematical Framework <math.md>
+Regulatory Compliance for Pharmaceutical Industry <regulatory.md>
+:::	
 
 ## Replicate our results
 
@@ -37,22 +53,8 @@ You will find specific instructions on how to run the model (including previous
 versions) as described in each of our published papers
 [here](papers/summary.rst).
 
-## Dependencies
-
-We strongly encourage you to use Anaconda and create a conda environment based
-on the environment.yml file we provide.
-
-Otherwise, you may base yourself on the requirements.txt file we provide for
-the minimal required versions.
-
-## Further information
-
-More information on the model itself can be found in this documentation, in
-particular in the [section dedicated to our papers](papers/summary.rst).
-
 ## Acknowledgments
 
-SPARCED is a product of the [Birtwistle Lab](http://www.birtwistlelab.com/).
 
 We greatly appreciate the help from multiple colloborators, including:
 
@@ -69,14 +71,4 @@ the National Science Foundation._
 
 _Clemson University is acknowledged for their generous allotment of compute time
 on the Palmetto Cluster._
-
-
-
-
-:::{toctree}
-:maxdepth: 1
-
-Terminology <definitions.md>
-ODE and SGE <math.md>
-:::
 
