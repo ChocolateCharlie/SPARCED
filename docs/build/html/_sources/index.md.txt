@@ -25,11 +25,11 @@ article.bd-article section {
 <!-- Hero Left Buttons -->
 <div class="homepage-button-container">
   <div class="homepage-button-container-row">
-      <a href="./quickstart.md" class="homepage-button primary-button"> Get Started </a>
-      <a href="./about/index.md" class="homepage-button secondary-button"> Learn More </a>
+      <a href="./quickstart.html" class="homepage-button primary-button"> Get Started </a>
+      <a href="./about/index.html" class="homepage-button secondary-button"> Learn More </a>
   </div>
   <div class="homepage-button-container-row">
-      <a href="./community/devs/reference/summary.md" class="homepage-button-link"> For Developers: Access Technical Documentation → </a>
+      <a href="./community/devs/reference/summary.html" class="homepage-button-link"> For Developers: Access Technical Documentation → </a>
   </div>
 </div> <!-- End Hero Left Buttons -->
 </div>  <!-- End Hero Left -->
